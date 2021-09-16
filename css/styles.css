@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display:ital@1&display=swap');
+#content {
+    max-width: 600px;
+
+    background-color: rgb(194, 220, 235);
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 70px 70px 70px;
+}
+
+h1 {font-family: "Playfair Display", "Plantino", serif;
+    font-style: italic;
+    height: 40px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    background-color: lightcoral;
+    border-radius: 25px;
+    grid-column: 1/7;
+    grid-row: 2/3;
+}
+#picture {
+    box-shadow: 0px 0px 8px black;
+    grid-column: 5/6;
+    grid-row: 1/5;
+    padding: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+main {font-family: "Dosis", "Ariel", sans-serif;
+    padding-left: 30px;
+    margin-top: -70px;
+}
+footer {
+    padding-bottom: 40px;
+}
+#footertext {
+    margin: 20px;
+   background-color: lightcoral;
+   height: 70px;
+   border-radius: 25px;
+}
+p {
+    text-align: center;
+    padding: 10px;
+}
