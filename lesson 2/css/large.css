@@ -1,0 +1,11 @@
+@media only screen and (min-width: 60em) {
+    .gridarea {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+        
+    }
+
+}
