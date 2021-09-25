@@ -26,6 +26,12 @@ main {
   font-family: "Yanone Kaffeesatz", sans-serif;
   padding: 0 1.5em;
 }
+main ul {
+  list-style: none;
+}
+main ul li::before {
+  content: "❇︎";
+}
 footer {
   font-family: "Domine", serif;
   font-weight: 400;
