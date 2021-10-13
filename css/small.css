@@ -37,6 +37,7 @@ footer {
   font-family: "Domine", serif;
   font-weight: 400;
   font-size: 0.75em;
+  text-align: center;
   background-color: rgb(108, 57, 106);
   color: white;
 }
@@ -47,6 +48,5 @@ footer {
   color: rgb(237, 248, 188);
 }
 p {
-  text-align: center;
   padding: 10px;
 }
