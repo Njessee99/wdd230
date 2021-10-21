@@ -155,22 +155,22 @@ main {
 }
 .days {
   border: 1px solid black;
-  border-top: 2px solid black;
+  border-top: 3px solid black;
   padding: 0.3em;
   background-color: rgb(243, 238, 125);
   font-weight: bold;
 }
 .daysweather {
   border: 1px solid black;
- border-bottom: 2px solid  black;
+ border-bottom: 3px solid  black;
   padding: 0.3em;
   font-weight: bold;
 }
 .forecastLeft {
-  border-left: 2px solid black;
+  border-left: 3px solid black;
 }
 .forecastRight {
-  border-right: 2px solid black;
+  border-right: 3px solid black;
 }
 .article {
   border: 1px solid rgb(140, 212, 220);
