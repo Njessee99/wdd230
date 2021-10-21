@@ -1,0 +1,63 @@
+@media (min-width: 590px) {
+  body {
+    margin: 0 auto;
+  }
+  .pancake {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+  header {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+  header img {
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 1em;
+  }
+  header h1 {
+    font-size: 2em;
+    padding-top: 0.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  header div {
+    display: block;
+    font-size: 1em;
+    line-height: 0.9em;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  .summarybox {
+    font-size: 1em;
+    line-height: 1em;
+    bottom: 25px;
+    left: 25px;
+  }
+  .article {
+    margin: 2em;
+    text-align: left;
+  }
+  .article img {
+    float: right;
+    margin: 1em;
+    width: 300px;
+  }
+  .map {
+    display: block;
+  }
+}
