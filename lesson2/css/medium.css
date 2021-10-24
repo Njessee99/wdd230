@@ -1,0 +1,5 @@
+@media (min-width: 37em) {
+  .gridarea {
+    grid-template-columns: 1fr 1fr;
+  }
+}

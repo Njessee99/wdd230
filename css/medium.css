@@ -1,0 +1,25 @@
+@media only screen and (min-width: 32.5em) {
+  #content {
+    padding: 2em;
+  }
+  header {
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  img {
+    box-shadow: 0px 0px 8px black;
+    padding: 10px;
+    margin: 1em;
+    float: right;
+  }
+  main {
+    padding-left: 4em;
+  }
+  footer {
+    text-align: center;
+    margin: 1em;
+    border-radius: 10px;
+  }
+}

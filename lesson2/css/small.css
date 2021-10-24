@@ -1,0 +1,81 @@
+body {
+  width: auto;
+  background-color: rgb(202, 240, 238);
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0.3em 0;
+  text-align: center;
+}
+header {
+  background-color: rgb(108, 57, 106);
+  border-radius: 10px;
+  margin: 0 4em 0;
+}
+h1 {
+  font-family: "Domine", serif;
+  font-size: 2em;
+  padding: 0.5em;
+  color: white;
+  margin-bottom: 0;
+}
+header h2 {
+  font-family: "Domine", serif;
+  font-size: 1.5em;
+  color: white;
+  padding: 0.5em;
+  margin-top: -20px;
+}
+img {
+  max-width: 100%;
+  box-shadow: 0 0 10px 0 gray;
+}
+main {
+  font-family: "Laila", sans-serif;
+  font-size: 1.2em;
+}
+
+p {
+  padding: 1em;
+  text-align: left;
+}
+.gridarea {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+.principles {
+  max-width: 350px;
+  margin: 10px;
+  padding: 0 10px 0;
+  border-radius: 10px;
+  background-color: rgb(246, 243, 247);
+}
+.principles h3 {
+  background-color: rgb(28, 79, 76);
+  color: white;
+  padding: 0.5em;
+  margin: 0 -0.5em 1em;
+  border-radius: 10px 10px 0 0;
+  font-size: 1em;
+}
+
+footer {
+  margin: 0 4em 0;
+  font-family: "Domine", serif;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: rgb(108, 57, 106);
+  color: white;
+}
+.footertext a:link {
+  color: rgb(134, 243, 247);
+}
+.footertext a:visited {
+  color: rgb(237, 248, 188);
+}
+footer p {
+  text-align: center;
+  padding: 10px;
+}
