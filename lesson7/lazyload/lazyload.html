@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WDD230 Lazy Load Practice</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A practice page to learn how about lazy loading images"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="lazyload.css" />
+    <script defer src="lazyload.js"></script>
+  </head>
+
+  <body>
+    <h1>Lazy Loading Images</h1>
+    <picture
+      ><img
+        src="images/placeholder300.jpg"
+        data-src="images/photo1_300.jpg"
+        alt="Etihad towers in Abu Dhabi"
+    /></picture>
+    <picture
+      ><img
+        src="images/placeholder300.jpg"
+        data-src="images/photo2_300.jpg"
+        alt="Bridge picture"
+    /></picture>
+    <picture
+      ><img
+        src="images/placeholder300.jpg"
+        data-src="images/photo3_300.jpg"
+        loading="lazy"
+        alt="Large gateway at Emirates Palace Hotel"
+    /></picture>
+    <picture
+      ><img
+        src="images/placeholder300.jpg"
+        data-src="images/photo4_300.jpg"
+        loading="lazy"
+        alt="Etihad towers with palm tree"
+    /></picture>
+    <picture
+      ><img
+        src="images/placeholder300.jpg"
+        data-src="images/photo5_300.jpg"
+        loading="lazy"
+        alt="Sheik Zayed Grand Mosque"
+    /></picture>
+    <picture>
+        <img 
+        src="images/placeholder300.jpg" 
+        data-src="images/photo6_300.jpg" 
+        loading="lazy"
+        alt="Buildings with beach in foreground"></picture>
+  </body>
+</html>
