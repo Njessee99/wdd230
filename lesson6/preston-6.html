@@ -38,12 +38,12 @@
     <nav>
       <button onclick="toggleNav()">&#9776; Menu</button>
       <ul id="primaryNav" class="hide">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li class="active"><a href="preston-4.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
 
@@ -52,16 +52,25 @@
         <h2>Welcome to Preston, Idaho</h2>
         <div class="heroimage">
           <picture>
-            <source media="(max-width: 399px)" srcset="images/heroimage-400.jpg">
-            <source media="(max-width: 799px)" srcset="images/heroimage-800.jpg">
-            <source media="(min-width: 800px)" srcset="images/heroimage-1200.jpg">
-          <img
-            src="images/heroimage-1200.jpg"
-            alt="Picture of green field at sunset"
-            width="1200"
-            height="582"
-          />
-        </picture>
+            <source
+              media="(max-width: 399px)"
+              srcset="images/heroimage-400.jpg"
+            />
+            <source
+              media="(max-width: 799px)"
+              srcset="images/heroimage-800.jpg"
+            />
+            <source
+              media="(min-width: 800px)"
+              srcset="images/heroimage-1200.jpg"
+            />
+            <img
+              src="images/heroimage-1200.jpg"
+              alt="Picture of green field at sunset"
+              width="1200"
+              height="582"
+            />
+          </picture>
           <div class="summarybox">
             <h3>Weather&nbsp;Summary</h3>
             <span class="category">Currently:</span>
@@ -69,17 +78,16 @@
             <span class="category">Temperature:</span>
             <span class="conditions"><span id="temp">45</span>°F</span>
             <span class="category">Wind&nbsp;Chill:</span>
-            <span class="conditions"><span  id="wchill"></span>°F</span>
+            <span class="conditions"><span id="wchill"></span>°F</span>
             <span class="category">Humidity:</span>
             <span class="conditions">78%</span>
             <span class="category">Wind&nbsp;Speed:</span>
             <span class="conditions"><span id="windSpd">5</span>mph</span>
           </div>
         </div>
-        
-          
-          <div class="forecast">
-            <h3>Five Day Forecast</h3>
+
+        <div class="forecast">
+          <h3>Five Day Forecast</h3>
           <div class="days forecastLeft">Mon</div>
           <div class="days">Tue</div>
           <div class="days">Wed</div>
@@ -112,13 +120,12 @@
             75°F
           </div>
         </div>
-      
+
         <div class="article">
           <img
             src="images/soccer-girls.webp"
             alt="girls playing soccer"
             width="500"
-        
           />
           <h3>Preston Firebirds Finish Season Undefeated</h3>
           <p>by Christiano Ronaldo</p>
@@ -153,7 +160,6 @@
       <div class="contact">
         <h3>Contact Us</h3>
         <div class="map">
-          
           <img
             src="images/preston-map.png"
             alt="map of Preston Idaho"

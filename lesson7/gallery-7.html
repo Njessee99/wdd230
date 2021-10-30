@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Soccer Mom Weather Gallery</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A page for Soccer Mom Weather that shares images of weather that have been taken by our users."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/lazyloading.js"></script>
+    <script defer src="js/daysbetween.js"></script>
+  </head>
+
+  <body>
+    <aside class="notFriday">
+      🥞Preston Pancakes in the Park!🥞 <br />
+      Saturday 9:00 a.m. at the City Park Pavillion!
+    </aside>
+    <header>
+      <img
+        src="images/Weather-site-logo.svg"
+        alt="soccer mom weather logo"
+        width="200"
+      />
+      <section class="headings">
+        <h1>Soccer Mom Weather</h1>
+        <div class="motto">
+          Getting you the information you need, when&nbsp;you&nbsp;need&nbsp;it!
+        </div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleNav()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="../lesson6/preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Welcome to the Weather Gallery</h2>
+      <p><span id="daysbetween"></span></p>
+      <div class="gallerycontainer">
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto1_400.jpg"
+            alt="Bright orange and yellow storm clouds"
+            width="400"
+            height="300"
+          />
+          <figcaption>Beautiful Clouds at Sunset</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto2_400.jpg"
+            alt="Bus on city street with snow"
+            width="400"
+            height="300"
+          />
+          <figcaption>Downtown in the Snow</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto3_400.jpg"
+            alt="Lightning with rain"
+            width="400"
+            height="300"
+          />
+          <figcaption>Lightning strike with Rainclouds</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto4_400.jpg"
+            alt="Foggy woods"
+            width="400"
+            height="300"
+          />
+          <figcaption>Foggy Fall Day in the Woods</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto5_400.jpg"
+            alt="Pink lightning in sky"
+            width="400"
+            height="300"
+          />
+          <figcaption>Lightning in the Sky</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto6_400.jpg"
+            alt="Foggy woods"
+            width="400"
+            height="300"
+          />
+          <figcaption>Foggy Winter Walk</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto7_400.jpg"
+            alt="Snowy rock canyon"
+            width="400"
+            height="300"
+          />
+          <figcaption>Snow in the Canyon</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto8_400.jpg"
+            alt="Rain hitting a plant"
+            width="400"
+            height="300"
+          />
+          <figcaption>Give Said the Little Rain</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto9_400.jpg"
+            alt="Orange leaves on a puddle with rain"
+            width="400"
+            height="300"
+          />
+          <figcaption>Leaves are Falling All Around</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto10_400.jpg"
+            alt="Sunset with long grass and a hill"
+            width="400"
+            height="300"
+          />
+          <figcaption>Sunset on the Hill</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto11_400.jpg"
+            alt="Scenic Sunny day"
+            width="400"
+            height="300"
+          />
+          <figcaption>Sunrise Beauty</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder_400-300.png"
+            data-src="images/weatherphoto12_400.jpg"
+            alt="Fog with a bird on the water"
+            width="400"
+            height="300"
+          />
+          <figcaption>The Early Bird Catches the Fog</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <div class="map">
+          <img
+            src="images/preston-map.png"
+            alt="map of Preston Idaho"
+            width="300"
+          />
+        </div>
+        <div class="contactInfo">
+          <a href="https://www.google.com/maps/@42.0983483,-111.867498,13.39z"
+            >📍1440 E 800 N, Preston, ID 83263</a
+          >
+          <div>☎️ (555)555-5555</div>
+          <div>✉️ soccermom@info.com</div>
+          <div>
+            <a href="#"
+              ><img
+                src="images/facebook-icon.png"
+                alt="facebook icon"
+                width="50"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/instagram-icon.png"
+                alt="instagram icon"
+                width="50"
+            /></a>
+            <a href="#"
+              ><img src="images/twitter-icon.png" alt="twitter icon" width="50"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/whatsapp-icon.png"
+                alt="whatsapp icon"
+                width="50"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footertext">
+        <p>
+          &copy; <span id="currentyear"> </span> | Soccer Mom Weather |
+          Attributions | Nichole Jessee | <br />
+          <span id="todaysDate"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Amatic+SC", "Lilita+One", "Work+Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>
