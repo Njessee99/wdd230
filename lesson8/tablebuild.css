@@ -1,19 +1,13 @@
-body {
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 20px;
-}
+
 table {
+    margin: 10px auto;
     font-family: Ubuntu, sans-serif;
-    font-size: 1.3em;
     box-shadow: 10px 10px 20px 5px #628ca6;
-    border-spacing: 0px;   
-    text-align: center;
-    border: 1px solid lightgrey;
-    width: 100%;
+    border-collapse: collapse;  
+    text-align: center;   
 }
 th, td {
-    padding: 10px 0px;
+    padding: 7px 10px;
     border: 1px solid lightgrey;
    }
 thead th{
