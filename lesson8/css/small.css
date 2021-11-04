@@ -279,7 +279,7 @@ form input.submitBtn {
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
-  margin: 1rem;
+  margin: 1rem 0rem;
   width: 96%;
   max-width: 580px;
   border: solid 1px black;
