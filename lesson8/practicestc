@@ -1,0 +1,46 @@
+<form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" pattern="[A-Za-z].{5,}" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="anyone@mail.com"></label>
+                <label class="top">Phone Number* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required pattern="[0-9]{5}"></label>
+            </fieldset>
+            <fieldset>
+                 <legend>Storm Information</legend>
+                 <label class="top">Storm Date <input type="date" name="stormDate">
+                 <label class="top">Storm Type </label><input list="storm-type" name="storm-type">
+                        <datalist id="storm-type">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                <label class="top">Storm Severity</label>    
+                <input type="range" name="stormSeverity" min="1" max="10" step="1" list="ticmmarks">
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="">Select Region</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                     </select> 
+                </label>
+                
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner </label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate </label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced </label>
+
+                <div>Are You in Danger?</div>
+                 <label class="sbs"><input type="radio" name="danger" value="yes">Yes </label>
+                 <label class="sbs"><input type="radio" name="danger" value="yes">Maybe </label>
+                 <label class="sbs"><input type="radio" name="danger" value="yes">No </label>  
+                 <label for="additionalInfo" class="top">Additional Information</label>  
+                 <textarea name="additionalInfo" id="additionalInfo" cols="30" rows="5"></textarea>          
+            </fieldset>            
+            <input type="submit" value = "Report This Storm" class="submitBtn">
+ 
+ 
+        </form> 
