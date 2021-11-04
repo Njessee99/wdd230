@@ -61,8 +61,8 @@
     grid-template-columns: 1fr 1fr;
   }
   form label.sbs {
-    padding: .4rem 0;
-}
+    padding: 0.4rem 0;
+  }
   .map {
     display: block;
   }

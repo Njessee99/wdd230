@@ -41,16 +41,16 @@
         <li><a href="../lesson6/preston-6.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li class="active"><a href="#">Storm Center</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
         <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
 
     <main class="stormReport">
       <h2>Report a Storm</h2>
-      
-        <form method="GET" action="thanks.html">
-            <div class="stormForm">
+
+      <form method="GET" action="thanks.html">
+        <div class="stormForm">
           <fieldset>
             <legend>User Information</legend>
             <label class="top"
@@ -68,22 +68,17 @@
               <input type="tel" name="phone" placeholder="1235551234" required
             /></label>
             <label class="top"
-              ><b>Zip Code*</b
-              ><input
-                type="number"
-                name="zip"
-                required
-                
+              ><b>Zip Code*</b><input type="number" name="zip" required
             /></label>
           </fieldset>
           <fieldset>
             <legend>Storm Report</legend>
             <label class="top"
-              >Storm Date <input type="date" name="stormDate" />
+              >Storm Date <input type="date" name="stormDate" required />
             </label>
             <label class="top"
               >Storm Type
-              <input list="storm-type" name="storm-type" />
+              <input list="storm-type" name="storm-type" required/>
               <datalist id="storm-type">
                 <option value="Blizzard"></option>
                 <option value="Flash Flood"></option>
@@ -149,20 +144,18 @@
 
             <label for="additionalInfo" class="top"
               >Additional Information
-            
-            <textarea
-              name="additionalInfo"
-              id="additionalInfo"
-              cols="40"
-              rows="8"
-            ></textarea>
-        </label>
+
+              <textarea
+                name="additionalInfo"
+                id="additionalInfo"
+                cols="40"
+                rows="8"
+              ></textarea>
+            </label>
           </fieldset>
         </div>
-          <input type="submit" value="Report This Storm" class="submitBtn" />
-        
-        </form>
-      
+        <input type="submit" value="Report This Storm" class="submitBtn" />
+      </form>
     </main>
 
     <footer>
