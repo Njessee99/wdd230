@@ -19,7 +19,8 @@ tbody th {
   background-color: #628ca6;
   color: white;
 }
-tbody tr {
+
+tbody tr{
   background-color: #e7ffed;
 }
 tbody tr:nth-child(even) {
