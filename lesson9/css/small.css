@@ -156,7 +156,7 @@ div.townCards section h2 {
   line-height: 1rem;
 }
 div.townData {
-  padding-top: 0.5rem;
+  padding: 0.5rem;
 }
 div.townCards img {
   border: 3px solid white;
