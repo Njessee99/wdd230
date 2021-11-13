@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Soccer Mom Weather</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="The home page for Soccer Mom Weather site. It provides data about each of the towns covered by Soccer Mom Weather as well as sports information and photo contest winners."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/lazyloading.js"></script>
+    <script defer src="js/towncards.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="images/Weather-site-logo.svg"
+        alt="soccer mom weather logo"
+        width="200"
+      />
+      <section class="headings">
+        <h1>Soccer Mom Weather</h1>
+        <div class="motto">
+          Getting you the information you need, when&nbsp;you&nbsp;need&nbsp;it!
+        </div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleNav()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="../lesson6/preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="homeHeroimage">
+        <picture>
+          <source
+            media="(max-width: 399px)"
+            srcset="images/home_heroimage_400.webp"
+          />
+          <source
+            media="(max-width: 799px)"
+            srcset="images/home_heroimage_800.webp"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="images/home_heroimage_1200.webp"
+          />
+          <img
+            src="images/heroimage-1200.jpg"
+            alt="valley of yellow grass overlooking town"
+            width="1200"
+            height="564"
+          />
+        </picture>
+        <div class="callButton">
+          <a href="../lesson8/stormcenter.html"><h2>Report a Storm!!</h2></a>
+        </div>
+      </div>
+      <div class="homePageContainer">
+        <section class="games">
+          <h2>Top Games of the Week</h2>
+          <div>
+            <p>
+              <strong>U14 Boys: Preston vs. Soda Springs</strong><br />
+              ➤ Saturday, 9am @ Soda Park
+            </p>
+            <p>
+              <strong>U12 Girls: Fish Haven vs. Soda Springs</strong><br />
+              ➤ Saturday, 11am @ Fish Field
+            </p>
+            <p>
+              <strong>U10 Girls: Soda Springs vs. Fish Haven</strong><br />
+              ➤ Saturday, 2pm @ Preston High School
+            </p>
+            <p>
+              <strong>U6 Co-ed: Blueberries vs. Dragons</strong><br />
+              ➤ Saturday, 2pm @ Fish Field
+            </p>
+          </div>
+        </section>
+        <section class="photoWinner">
+          <h2>Photo of the Month Winner!</h2>
+          <figure>
+            <img
+              src="images/placeholder_400-300.png"
+              data-src="images/weatherphoto10_400.jpg"
+              alt="Sunset with long grass and a hill"
+              width="400"
+              height="300"
+            />
+            <figcaption>
+              Taken By: Nichole Jessee <br />
+              Date: October 15, 2021
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+      <div class="townCards"></div>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <div class="map">
+          <a href="https://www.google.com/maps/@42.0983483,-111.867498,13.39z"
+            ><img
+              src="images/preston-map.png"
+              alt="map of Preston Idaho"
+              width="300"
+          /></a>
+        </div>
+        <div class="contactInfo">
+          <a href="https://www.google.com/maps/@42.0983483,-111.867498,13.39z"
+            >📍1440 E 800 N, Preston, ID 83263</a
+          >
+          <div>☎️ (555)555-5555</div>
+          <div>✉️ soccermom@info.com</div>
+          <div>
+            <a href="#"
+              ><img
+                src="images/facebook-icon.png"
+                alt="facebook icon"
+                width="50"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/instagram-icon.png"
+                alt="instagram icon"
+                width="50"
+            /></a>
+            <a href="#"
+              ><img src="images/twitter-icon.png" alt="twitter icon" width="50"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/whatsapp-icon.png"
+                alt="whatsapp icon"
+                width="50"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footertext">
+        <p>
+          &copy; <span id="currentyear"> </span> | Soccer Mom Weather |
+          Attributions | Nichole Jessee | <br />
+          <span id="todaysDate"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Amatic+SC", "Lilita+One", "Work+Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>
