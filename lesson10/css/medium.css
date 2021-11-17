@@ -1,0 +1,101 @@
+@media (min-width: 590px) {
+  body {
+    margin: 0 auto;
+  }
+  .pancake {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+  header {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+  header img {
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 1em;
+  }
+  header h1 {
+    font-size: 2em;
+    padding-top: 0.5em;
+  }
+
+  header div {
+    display: block;
+    font-size: 1em;
+    line-height: 0.9em;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  /*-------------Home Page-----------------*/
+  div.homePageContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-items: center;
+    padding: 1rem;
+  }
+  div.callButton {
+    bottom: 30px;
+    right: 20px;
+    font-size: 1.3rem;
+  }
+  section.games {
+    grid-column: 1;
+  }
+
+  section.photoWinner {
+    grid-column: 2;
+  }
+  div.townCards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  div.townCards section:nth-child(odd) img {
+    grid-column: 1;
+  }
+  div.townCards section:nth-child(odd) div.townData {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  /*-------------Preston Page-----------------*/
+
+  .summarybox {
+    font-size: 1em;
+    line-height: 1em;
+    bottom: 25px;
+    left: 25px;
+  }
+  .article {
+    margin: 2em;
+    text-align: left;
+  }
+  .article img {
+    float: right;
+    margin: 1em;
+    width: 300px;
+  }
+  .gallerycontainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  form label.sbs {
+    padding: 0.4rem 0;
+  }
+  .map {
+    display: block;
+  }
+}
