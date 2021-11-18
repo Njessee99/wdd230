@@ -4,12 +4,13 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
-    document.querySelector("#temp").textContent = jsObject.main.temp;
+    document.querySelector("#temp").textContent = jsObject.main.temp.toFixed(0);
     document.querySelector("#desc").textContent =
       jsObject.weather[0].description;
     document.querySelector("#humidity").textContent = jsObject.main.humidity;
-    document.querySelector("#windSpd").textContent = jsObject.wind.speed;
+    document.querySelector(
+      "#windSpd"
+    ).textContent = jsObject.wind.speed.toFixed(0);
 
     const tempF = document.querySelector("#temp").textContent;
     const wind = document.querySelector("#windSpd").textContent;
@@ -28,12 +29,6 @@ fetch(apiURL)
       return chill.toFixed(0);
     }
     document.querySelector("#wchill").innerHTML = chill;
-
-    //const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-    // const desc = jsObject.weather[0].description;
-    // document.getElementById('imagesrc').textContent = imagesrc;
-    // document.getElementById('icon').setAttribute('src',imagesrc);
-    //  document.getElementById('icon').setAttribute('alt', desc);
   });
 const castURL =
   "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=1925537df249e2feeb9c942f8dcf140e&units=imperial";
@@ -41,10 +36,8 @@ const castURL =
 fetch(castURL)
   .then((response) => response.json())
   .then((jsfObject) => {
-    console.log(jsfObject);
     const list = jsfObject["list"];
     const fiveDays = list.filter((list) => list.dt_txt.includes("18:00:00"));
-    console.log(fiveDays);
     fiveDays.forEach((fiveDays) => {
       let castInfo = document.createElement("div");
       let castDay = document.createElement("div");
@@ -52,12 +45,13 @@ fetch(castURL)
       let imgIcon = document.createElement("img");
       let castTemp = document.createElement("div");
       let span = document.createElement("span");
-      let foreDate = new Date(`${fiveDays.dt_txt}`);
-      let dayName = new Date(foreDate).toLocaleString('en-us', {weekday: 'short',});
-     
+      let foreDate = new Date(fiveDays.dt_txt);
+      let dayName = new Date(foreDate).toLocaleString("en-us", {
+        weekday: "short",
+      });
 
       castDay.innerHTML = `${dayName}`;
-      castTemp.innerHTML = `${fiveDays.main.temp}`;
+      castTemp.innerHTML = `${fiveDays.main.temp.toFixed(0)}`;
       span.innerHTML = `°F`;
       castDay.className = "days";
       castDiv.className = "daysweather";
@@ -73,8 +67,4 @@ fetch(castURL)
       castTemp.appendChild(span);
       document.querySelector("div.forecast").appendChild(castInfo);
     });
-
-    // const imgSrc = `https://openweathermap.org/img/w/${fiveDays[0].weather[0].icon}.png`;
-    //document.querySelector("#day1temp").textContent = fiveDays[0].main.temp;
-    //document.querySelector("#day1icon").setAttribute('src', imgSrc);
   });

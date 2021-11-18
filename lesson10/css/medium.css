@@ -56,7 +56,6 @@
   section.games {
     grid-column: 1;
   }
-
   section.photoWinner {
     grid-column: 2;
   }
@@ -80,6 +79,9 @@
     bottom: 25px;
     left: 25px;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
   .article {
     margin: 2em;
     text-align: left;
@@ -89,12 +91,15 @@
     margin: 1em;
     width: 300px;
   }
+  /*-------------Gallery-----------------*/
   .gallerycontainer {
     grid-template-columns: 1fr 1fr;
   }
+  /*-------------Storm Center-----------------*/
   form label.sbs {
     padding: 0.4rem 0;
   }
+  /*-------------Footer-----------------*/
   .map {
     display: block;
   }

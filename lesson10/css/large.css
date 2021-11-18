@@ -13,6 +13,8 @@
   nav ul li a {
     font-size: 1.8rem;
   }
+  main {
+    padding: 1em;
   /*-------------Home Page-----------------*/
   div.callButton {
     bottom: 40px;
@@ -40,10 +42,13 @@
 
   /*-------------Preston Page-----------------*/
   .summarybox {
-    font-size: 1.2em;
+    font-size: 1rem;
     line-height: 1.1em;
     bottom: 30px;
     left: 30px;
+  }
+  h2 {
+    font-size: 2rem;
   }
 
   /*-------------Gallery-----------------*/

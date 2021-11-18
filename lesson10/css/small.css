@@ -206,6 +206,9 @@ div.townCards img {
   padding-left: 0.4em;
   color: rgb(252, 248, 173);
 }
+#desc {
+  text-transform: capitalize;
+}
 .forecast {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -227,27 +230,20 @@ div.townCards img {
 }
 .days {
   border: 1px solid black;
-  
   padding: 0.3em;
-  background-color: rgb(243, 238, 125);
+  background-color: rgba(243, 238, 125, 1);
   font-weight: bold;
 }
 .daysweather {
   border: 1px solid black;
-  
+  background-color: rgba(243, 238, 125, 0.2);
   padding: 0.3em;
   font-weight: bold;
-}
-.forecastLeft {
-  border-left: 3px solid black;
-}
-.forecastRight {
-  border-right: 3px solid black;
 }
 .article {
   border: 1px solid rgb(140, 212, 220);
   padding: 1em;
-  box-shadow: 0 0 5px rgb(67, 66, 66);
+  box-shadow: 0 0 5px rgb(24, 24, 36);
   background-color: rgba(140, 212, 220, 0.4);
   margin: auto;
   margin-top: 1em;
