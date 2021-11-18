@@ -53,8 +53,7 @@ fetch(castURL)
       let castTemp = document.createElement("div");
       let span = document.createElement("span");
       let foreDate = new Date(`${fiveDays.dt_txt}`);
-      let foreDay = foreDate.getDay();
-      let dayName = new Date(foreDay).toLocaleString('en-us', {weekday: 'short',});
+      let dayName = new Date(foreDate).toLocaleString('en-us', {weekday: 'short',});
      
 
       castDay.innerHTML = `${dayName}`;
