@@ -45,8 +45,8 @@ fetch(castURL)
       let imgIcon = document.createElement("img");
       let castTemp = document.createElement("div");
       let span = document.createElement("span");
-      let foreDate = new Date(fiveDays.dt_txt);
-      let dayName = new Date(foreDate).toLocaleString("en-us", {
+      
+      let dayName = new Date(fiveDays.dt_txt).toLocaleString("en-us", {
         weekday: "short",
       });
 
