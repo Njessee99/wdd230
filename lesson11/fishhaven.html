@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Soccer Mom Weather-Fish Haven</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A page for Soccer Mom Weather that shares community information and weather data for Fish Haven Idaho"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lilita+One&family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/fishhaven_weather.js"></script>
+    <script defer src="js/fishhaven_events.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="images/weather-site-logo-red.jpg"
+          alt="soccer mom weather logo"
+          width="200"
+      /></a>
+      <section class="headings">
+        <h1>Soccer Mom Weather</h1>
+        <div class="motto">
+          Getting you the information you need, when&nbsp;you&nbsp;need&nbsp;it!
+        </div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleNav()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodaspings.html">Soda Springs</a></li>
+        <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="mainContainer">
+        <h2>Welcome to Fish Haven, Idaho</h2>
+        <div class="heroimage">
+          <picture>
+            <source
+              media="(max-width: 399px)"
+              srcset="images/fishhaven_hero_400.jpg"
+            />
+            <source
+              media="(max-width: 799px)"
+              srcset="images/fishhaven_hero_800.jpg"
+            />
+            <source
+              media="(min-width: 800px)"
+              srcset="images/fishhaven_hero_1000.jpg"
+            />
+            <img
+              src="images/fishhaven_hero_1000.jpg"
+              alt="Farmhouse near pond with pink clouds after a storm"
+              width="1200"
+              height="582"
+            />
+          </picture>
+          <div class="summarybox">
+            <h3>Weather&nbsp;Summary</h3>
+            <span class="category">Currently:</span>
+            <span class="conditions"><span id="desc"></span></span>
+            <span class="category">Temperature:</span>
+            <span class="conditions"><span id="temp"></span>°F</span>
+            <span class="category">Wind&nbsp;Chill:</span>
+            <span class="conditions"><span id="wchill"></span>°F</span>
+            <span class="category">Humidity:</span>
+            <span class="conditions"><span id="humidity"></span>%</span>
+            <span class="category">Wind&nbsp;Speed:</span>
+            <span class="conditions"><span id="windSpd"></span>mph</span>
+          </div>
+        </div>
+
+        <div class="forecastEvents">
+          <h2>Five Day Forecast</h2>
+          <div class="forecast"></div>
+          <h2>Town Events</h2>
+          <div class="events"></div>
+        </div>
+        <h2 class="news">Town News</h2>
+        <div class="article">
+          <img
+            src="images/rainy_soccer.webp"
+            alt="boys in rain with soccer ball"
+            width="500"
+            loading="lazy"
+          />
+          <h3>Rain Puts a Damper on the Sharks' Last Game of the Season</h3>
+          <p>by Noah James</p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Auctor neque vitae tempus quam pellentesque nec nam. Turpis egestas
+            sed tempus urna et pharetra pharetra massa. Tincidunt lobortis
+            feugiat vivamus at augue eget arcu dictum varius. Tristique senectus
+            et netus et. Dolor purus non enim praesent. Id eu nisl nunc mi ipsum
+            faucibus. At volutpat diam ut venenatis. Eget nunc scelerisque
+            viverra mauris in. Pretium lectus quam id leo. Ultrices neque ornare
+            aenean euismod elementum nisi quis. Eget felis eget nunc lobortis.
+            Tortor aliquam nulla facilisi cras. Pharetra et ultrices neque
+            ornare aenean. Vestibulum mattis ullamcorper velit sed ullamcorper
+            morbi tincidunt ornare. Adipiscing at in tellus integer. Egestas
+            quis ipsum suspendisse ultrices gravida.
+          </p>
+          <p>
+            Donec enim diam vulputate ut pharetra. Volutpat commodo sed egestas
+            egestas fringilla phasellus faucibus scelerisque eleifend. At quis
+            risus sed vulputate odio ut. Sollicitudin nibh sit amet commodo
+            nulla facilisi. Sit amet cursus sit amet dictum sit amet. Sed tempus
+            urna et pharetra. Aliquam sem et tortor consequat id porta nibh
+            venenatis. Sagittis nisl rhoncus mattis rhoncus urna. Elit eget
+            gravida cum sociis. Neque convallis a cras semper auctor neque vitae
+            tempus. Mattis molestie a iaculis at erat pellentesque adipiscing
+            commodo. Arcu bibendum at varius vel pharetra vel turpis nunc eget.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <div class="map">
+          <img
+            src="images/preston-map.png"
+            alt="map of Preston Idaho"
+            width="300"
+          />
+        </div>
+        <div class="contactInfo">
+          <a href="https://www.google.com/maps/@42.0983483,-111.867498,13.39z"
+            >📍1440 E 800 N, Preston, ID 83263</a
+          >
+          <div>☎️ (555)555-5555</div>
+          <div>✉️ soccermom@info.com</div>
+          <div>
+            <a href="#"
+              ><img
+                src="images/facebook-icon.png"
+                alt="facebook icon"
+                width="50"
+                loading="lazy"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/instagram-icon.png"
+                alt="instagram icon"
+                width="50"
+                loading="lazy"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/twitter-icon.png"
+                alt="twitter icon"
+                width="50"
+                loading="lazy"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/whatsapp-icon.png"
+                alt="whatsapp icon"
+                width="50"
+                loading="lazy"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footertext">
+        <div>
+          Weather data provided by
+          <a href="https://openweathermap.org/">openweathermap.org</a>
+        </div>
+        <p>
+          &copy; <span id="currentyear"> </span> | Soccer Mom Weather |
+           Nichole Jessee | <br />
+          <span id="todaysDate"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

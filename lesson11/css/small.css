@@ -1,0 +1,365 @@
+html {
+  background-color: rgba(140, 212, 220, 1);
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.pancake {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgba(24, 24, 36, 1);
+  background-color: rgba(243, 238, 125, 1);
+  text-align: center;
+  padding: 1rem;
+}
+.notFriday {
+  display: none;
+}
+header {
+  background-color: rgba(240, 73, 64, 1);
+  color: rgba(245, 243, 232, 1);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+header img {
+  max-width: 75px;
+  max-height: 75px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+header h1 {
+  font-family: "Lilita One", cursive;
+  font-size: 1.9rem;
+  margin: 0.3em 0 0;
+  font-weight: normal;
+}
+header div {
+  line-height: 1.2em;
+  display: none;
+}
+h2 {
+  font-family: "Lilita One", cursive;
+  font-size: 1.2em;
+  font-weight: normal;
+  text-align: center;
+}
+nav {
+  background-color: rgba(24, 24, 36, 1);
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+}
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: rgba(243, 238, 125, 1);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  display: block;
+  color: rgba(243, 238, 125, 1);
+  text-align: center;
+  padding: 0.75rem 2%;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav ul li.active a {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(243, 238, 125, 1);
+}
+nav a:hover {
+  background-color: rgba(140, 212, 220, 0.9);
+  color: rgba(24, 24, 36, 1);
+}
+nav ul.hide {
+  display: none;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(245, 243, 232, 1);
+  padding: 0.5em;
+}
+main img {
+  max-width: 100%;
+  height: auto;
+}
+/*-------------Home Page-----------------*/
+div.homeHeroimage {
+  position: relative;
+}
+div.callButton {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  background-color: rgba(245, 243, 232, 1);
+  padding: 0.4em 1em;
+  line-height: 0em;
+  border-radius: 100px 10px 100px 10px;
+  box-shadow: 8px 8px 10px black;
+}
+div.callButton a {
+  text-decoration: none;
+  color: rgba(240, 73, 64, 1);
+}
+section.games,
+section.photoWinner {
+  text-align: center;
+}
+section.games div {
+  margin: 0 auto;
+  max-width: max-content;
+  box-shadow: 0 0 10px rgba(24, 24, 36, 1);
+  background-color: rgba(24, 24, 36, 1);
+  color: rgba(140, 212, 220, 1);
+  text-align: center;
+  padding: .5rem;
+  border: 3px solid rgba(140, 212, 220, 1);
+}
+section.photoWinner figure {
+  box-shadow: 0 0 10px rgba(24, 24, 36, 1);
+  border: 3px solid rgba(24, 24, 36, 1);
+  margin: 10px auto;
+  max-width: max-content;
+  background-color: rgba(140, 212, 220, 1);
+}
+
+div.townCards {
+  display: grid;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+div.townCards section {
+  background-color: rgba(24, 24, 36, 1);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.4em;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  color: rgba(140, 212, 220, 1);
+}
+div.townCards section h2 {
+  font-size: 1.5em;
+  line-height: 1rem;
+}
+div.townData {
+  padding: 0.5rem;
+}
+div.townCards img {
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(24, 24, 36, 1);
+  margin: -8px;
+}
+/*------------Town Pages-----------------*/
+
+.heroimage {
+  position: relative;
+  color: white;
+}
+
+.summarybox {
+  display: grid;
+  grid-gap: 0.3em;
+  background-color: rgba(240, 73, 64, 0.95);
+  padding: 0.5em;
+  width: max-content;
+  box-shadow: 0 0 10px rgba(24, 24, 36, 1);
+  border: 1px solid black;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+.summarybox h3 {
+  border-bottom: 1px solid white;
+  margin: 0.2em;
+  grid-column: 1/3;
+}
+.category {
+  text-align: right;
+}
+.conditions {
+  color: rgba(243, 238, 125, 1);
+}
+#desc {
+  text-transform: capitalize;
+}
+.forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.daysweather img {
+  display: block;
+  margin: 0 auto;
+  padding: 0.2em;
+  
+}
+.days, .daysweather {
+  border: 1px solid rgba(24, 24, 36, 1);
+  padding: 0.3em;
+  background-color: rgba(243, 238, 125, 1);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  
+}
+.daysweather {
+  background-color: rgba(243, 238, 125, 0.2);
+  
+}
+.eventsCard {
+  background-color: rgba(24, 24, 36, .8);
+  padding: .7rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.eventsBox {
+  background-color: rgba(24, 24, 36, 1);
+  color: rgba(140, 212, 220, 1);
+  text-align: center;
+  padding: .5rem;
+  border: 3px solid rgba(140, 212, 220, 1);
+}
+.eventsBox p {
+  margin: 5px;
+}
+.article {
+  padding: 1em;
+  box-shadow: 0 0 5px rgba(24, 24, 36, 1);
+  background-color: rgba(140, 212, 220, 0.4);
+  
+}
+h2.news {
+  margin-bottom: 3px;
+}
+.article img {
+  box-shadow: 0 0 10px rgba(24, 24, 36, 1);
+  border-radius: 0px 30px 0px 30px;
+}
+/*-------------Photo Gallery-----------------*/
+
+.gallerycontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+.gallerycontainer figure {
+  justify-self: center;
+  margin: 0;
+  box-shadow: 0 0 5px rgba(24, 24, 36, 1);
+}
+
+.gallerycontainer figcaption {
+  text-align: center;
+  padding-bottom: 0.2em;
+}
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+figure img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+/*-------------Storm Center-----------------*/
+div.stormForm {
+  background-color: rgba(140, 212, 220, 1);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+form fieldset {
+  margin-bottom: 2rem;
+  border: 3px solid rgba(24, 24, 36, 1);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+form fieldset:nth-child(2) {
+  margin-bottom: 0.5rem;
+}
+form legend {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.2em;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: black;
+  width: 85%;
+  max-width: 20rem;
+  background-color: rgba(245, 243, 245, 0.8);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: black;
+}
+
+form input.submitBtn {
+  background-color: rgba(5, 136, 46, 1);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  width: 96%;
+  max-width: 580px;
+  border: solid 1px rgba(24, 24, 36, 1);
+}
+.formButton {
+  text-align: center;
+}
+form input[type=radio] {
+  height: 18px;
+  width: 18px;
+}
+form label.top input:required {
+  border: 2px solid rgba(240, 73, 64, 1);
+}
+form label.top input:required:valid {
+  border: 1px solid rgba(24, 24, 36, 1);
+}
+
+/*-------------Footer-----------------*/
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(24, 24, 36, 1);
+  color: rgba(243, 238, 125, 1);
+  padding: .5em;
+}
+footer a {
+  color: rgba(245, 243, 245, 1);
+}
+footer a:visited {
+  color: rgba(240, 73, 64, 1);
+}
+.contact {
+  line-height: 2em;
+}
+.map {
+  display: none;
+}
