@@ -45,7 +45,7 @@ fetch(castURL)
       let imgIcon = document.createElement("img");
       let castTemp = document.createElement("div");
       let span = document.createElement("span");
-      
+
       let dayName = new Date(fiveDays.dt_txt).toLocaleString("en-us", {
         weekday: "short",
       });
@@ -59,7 +59,10 @@ fetch(castURL)
         "src",
         `https://openweathermap.org/img/w/${fiveDays.weather[0].icon}.png`
       );
-      imgIcon.setAttribute("alt", `${fiveDays.weather[0].disc}`);
+      imgIcon.setAttribute(
+        "alt",
+        `Icon showing ${fiveDays.weather[0].description}`
+      );
       castInfo.appendChild(castDay);
       castInfo.appendChild(castDiv);
       castDiv.appendChild(imgIcon);

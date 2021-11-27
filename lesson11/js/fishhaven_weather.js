@@ -4,10 +4,18 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    document.querySelector("#temp").innerHTML = `<b>${jsObject.main.temp.toFixed(0)}</b>`;
-    document.querySelector("#desc").innerHTML = `<b>${jsObject.weather[0].description}</b>`;
-    document.querySelector("#humidity").innerHTML = `<b>${jsObject.main.humidity}</b>`;
-    document.querySelector("#windSpd").innerHTML = `<b>${jsObject.wind.speed.toFixed(0)}</b>`;
+    document.querySelector(
+      "#temp"
+    ).innerHTML = `<b>${jsObject.main.temp.toFixed(0)}</b>`;
+    document.querySelector(
+      "#desc"
+    ).innerHTML = `<b>${jsObject.weather[0].description}</b>`;
+    document.querySelector(
+      "#humidity"
+    ).innerHTML = `<b>${jsObject.main.humidity}</b>`;
+    document.querySelector(
+      "#windSpd"
+    ).innerHTML = `<b>${jsObject.wind.speed.toFixed(0)}</b>`;
 
     const tempF = document.querySelector("#temp").textContent;
     const wind = document.querySelector("#windSpd").textContent;
@@ -42,7 +50,7 @@ fetch(castURL)
       let imgIcon = document.createElement("img");
       let castTemp = document.createElement("div");
       let span = document.createElement("span");
-      
+
       let dayName = new Date(fiveDays.dt_txt).toLocaleString("en-us", {
         weekday: "short",
       });
@@ -56,7 +64,10 @@ fetch(castURL)
         "src",
         `https://openweathermap.org/img/w/${fiveDays.weather[0].icon}.png`
       );
-      imgIcon.setAttribute("alt", `${fiveDays.weather[0].disc}`);
+      imgIcon.setAttribute(
+        "alt",
+        `Icon showing ${fiveDays.weather[0].description}`
+      );
       castInfo.appendChild(castDay);
       castInfo.appendChild(castDiv);
       castDiv.appendChild(imgIcon);

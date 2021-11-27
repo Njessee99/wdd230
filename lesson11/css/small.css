@@ -45,6 +45,8 @@ h2 {
   font-size: 1.2em;
   font-weight: normal;
   text-align: center;
+  margin-bottom: 3px;
+  margin-top: 20px;
 }
 nav {
   background-color: rgba(24, 24, 36, 1);
@@ -82,7 +84,7 @@ nav a:hover {
 nav ul.hide {
   display: none;
 }
-main {
+main, footer {
   max-width: 1200px;
   margin: 0 auto;
   background-color: rgba(245, 243, 232, 1);
@@ -101,8 +103,10 @@ div.callButton {
   bottom: 20px;
   right: 15px;
   background-color: rgba(245, 243, 232, 1);
-  padding: 0.4em 1em;
+  padding: 1.5rem;
   line-height: 0em;
+  font-family: "Lilita One", cursive;
+  font-size: 1.4rem;
   border-radius: 100px 10px 100px 10px;
   box-shadow: 8px 8px 10px black;
 }
@@ -121,7 +125,7 @@ section.games div {
   background-color: rgba(24, 24, 36, 1);
   color: rgba(140, 212, 220, 1);
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 3px solid rgba(140, 212, 220, 1);
 }
 section.photoWinner figure {
@@ -191,7 +195,7 @@ div.townCards img {
 #desc {
   text-transform: capitalize;
 }
-.forecast {
+div.forecast {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
@@ -201,23 +205,21 @@ div.townCards img {
   display: block;
   margin: 0 auto;
   padding: 0.2em;
-  
 }
-.days, .daysweather {
+.days,
+.daysweather {
   border: 1px solid rgba(24, 24, 36, 1);
   padding: 0.3em;
   background-color: rgba(243, 238, 125, 1);
   font-weight: bolder;
   font-size: 1.2rem;
-  
 }
 .daysweather {
   background-color: rgba(243, 238, 125, 0.2);
-  
 }
 .eventsCard {
-  background-color: rgba(24, 24, 36, .8);
-  padding: .7rem;
+  background-color: rgba(24, 24, 36, 0.8);
+  padding: 0.7rem;
   max-width: 400px;
   margin: 0 auto;
 }
@@ -225,7 +227,7 @@ div.townCards img {
   background-color: rgba(24, 24, 36, 1);
   color: rgba(140, 212, 220, 1);
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 3px solid rgba(140, 212, 220, 1);
 }
 .eventsBox p {
@@ -235,10 +237,6 @@ div.townCards img {
   padding: 1em;
   box-shadow: 0 0 5px rgba(24, 24, 36, 1);
   background-color: rgba(140, 212, 220, 0.4);
-  
-}
-h2.news {
-  margin-bottom: 3px;
 }
 .article img {
   box-shadow: 0 0 10px rgba(24, 24, 36, 1);
@@ -331,7 +329,7 @@ form input.submitBtn {
 .formButton {
   text-align: center;
 }
-form input[type=radio] {
+form input[type="radio"] {
   height: 18px;
   width: 18px;
 }
@@ -344,12 +342,9 @@ form label.top input:required:valid {
 
 /*-------------Footer-----------------*/
 footer {
-  max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
   background-color: rgba(24, 24, 36, 1);
   color: rgba(243, 238, 125, 1);
-  padding: .5em;
 }
 footer a {
   color: rgba(245, 243, 245, 1);

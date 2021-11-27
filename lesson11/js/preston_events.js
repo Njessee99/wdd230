@@ -6,28 +6,18 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject["towns"];
-    const myTowns = towns.filter(
-      (town) =>
-        town.name === "Preston" 
-    );
-
+    const myTowns = towns.filter((town) => town.name === "Preston");
     myTowns.forEach((myTowns) => {
       let card = document.createElement("section");
       let events = document.createElement("div");
-      let event1 = document.createElement("p");
-      let event2 = document.createElement("p");
-      let event3 = document.createElement("p");
-
-
-      event1.innerHTML = ` ${myTowns.events[0]}`;
-      event2.innerHTML = ` ${myTowns.events[1]}`;
-      event3.innerHTML = ` ${myTowns.events[2]}`;
-      card.className = "eventsCard";
-      events.className = "eventsBox";
-      card.appendChild(events);
-      events.appendChild(event1);
-      events.appendChild(event2);
-      events.appendChild(event3);
-      document.querySelector("div.events").appendChild(card);
+      for (i = 0; i < myTowns.events.length; i++) {
+        let event1 = document.createElement("p");
+        event1.innerHTML = ` ${myTowns.events[i]}`;
+        card.className = "eventsCard";
+        events.className = "eventsBox";
+        card.appendChild(events);
+        events.appendChild(event1);
+        document.querySelector("div.events").appendChild(card);
+      }
     });
   });

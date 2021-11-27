@@ -33,7 +33,9 @@
   div.townCards section {
     display: block;
   }
-
+  div.callButton {
+    font-size: 1.6rem;
+  }
   /*-------------Preston Page-----------------*/
   
   h2 {

@@ -87,12 +87,8 @@
   }
   div.forecastEvents h2 {
     grid-row: 1;
-    margin-bottom: 3px;
   }
-  div.forecast {
-    grid-column: 1;
-  }
-    
+  
   .article img {
     float: right;
     margin: 1em;
