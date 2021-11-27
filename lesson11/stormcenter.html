@@ -25,10 +25,11 @@
 
   <body>
     <header>
-      <a href="index.html"><img
-        src="images/weather-site-logo-red.jpg"
-        alt="soccer mom weather logo"
-        width="200"
+      <a href="./"
+        ><img
+          src="images/weather-site-logo-red.jpg"
+          alt="soccer mom weather logo"
+          width="200"
       /></a>
       <section class="headings">
         <h1>Soccer Mom Weather</h1>
@@ -40,7 +41,7 @@
     <nav>
       <button onclick="toggleNav()">&#9776; Menu</button>
       <ul id="primaryNav" class="hide">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="./">Home</a></li>
         <li><a href="preston.html">Preston</a></li>
         <li><a href="sodaspings.html">Soda Springs</a></li>
         <li><a href="fishhaven.html">Fish Haven</a></li>
@@ -81,7 +82,7 @@
             </label>
             <label class="top"
               >Storm Type
-              <input list="storm-type" name="storm-type" required/>
+              <input list="storm-type" name="storm-type" required />
               <datalist id="storm-type">
                 <option value="Blizzard"></option>
                 <option value="Flash Flood"></option>
@@ -158,8 +159,9 @@
           </fieldset>
         </div>
         <div class="formButton">
-        <input type="submit" value="Report This Storm" class="submitBtn" />
-      </div></form>
+          <input type="submit" value="Report This Storm" class="submitBtn" />
+        </div>
+      </form>
     </main>
 
     <footer>
@@ -173,7 +175,9 @@
           />
         </div>
         <div class="contactInfo">
-          <a href="https://www.google.com/maps/@42.0983483,-111.867498,13.39z"
+          <a
+            href="https://www.google.com/maps/@42.0983483,-111.867498,13.39z"
+            target="_blank"
             >📍1440 E 800 N, Preston, ID 83263</a
           >
           <div>☎️ (555)555-5555</div>
@@ -184,21 +188,28 @@
                 src="images/facebook-icon.png"
                 alt="facebook icon"
                 width="50"
+                loading="lazy"
             /></a>
             <a href="#"
               ><img
                 src="images/instagram-icon.png"
                 alt="instagram icon"
                 width="50"
+                loading="lazy"
             /></a>
             <a href="#"
-              ><img src="images/twitter-icon.png" alt="twitter icon" width="50"
+              ><img
+                src="images/twitter-icon.png"
+                alt="twitter icon"
+                width="50"
+                loading="lazy"
             /></a>
             <a href="#"
               ><img
                 src="images/whatsapp-icon.png"
                 alt="whatsapp icon"
                 width="50"
+                loading="lazy"
             /></a>
           </div>
         </div>
@@ -206,15 +217,16 @@
       <div class="footertext">
         <div>
           Weather data provided by
-          <a href="https://openweathermap.org/">openweathermap.org</a>
+          <a href="https://openweathermap.org/" target="_blank"
+            >openweathermap.org</a
+          >
         </div>
         <p>
-          &copy; <span id="currentyear"> </span> | Soccer Mom Weather |
-           Nichole Jessee | <br />
+          &copy; <span id="currentyear"> </span> | Soccer Mom Weather | Nichole
+          Jessee | <br />
           <span id="todaysDate"></span>
         </p>
       </div>
     </footer>
-
   </body>
 </html>
