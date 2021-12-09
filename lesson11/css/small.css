@@ -280,9 +280,6 @@ form fieldset {
   border-radius: 10px;
   padding: 0.5rem 2%;
 }
-form fieldset:nth-child(2) {
-  margin-bottom: 0.5rem;
-}
 form legend {
   margin: 0 1rem;
   padding: 0 0.5rem;

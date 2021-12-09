@@ -1,7 +1,7 @@
 //code to toggle nav menu//
 function toggleNav() {
   document.getElementById("primaryNav").classList.toggle("hide");
-}
+};
 //code to put current year for copyright
 let d = new Date();
 document.getElementById("currentyear").textContent = d.getFullYear();

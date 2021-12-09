@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marasy Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="A website for the Chamber of Commerce for Marasy, Abu Dhabi. It promotes businesses in the area and features weather, upcoming events, and local business information. The site also provides a place to join the chamber and experience the benefits of membership."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source
+          media="(max-width: 399px)"
+          srcset="images/Marasybanner_400.jpg"
+        />
+        <source
+          media="(max-width: 799px)"
+          srcset="images/Marasybanner_800.jpg"
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="images/Marasybanner_1800.jpg"
+        />
+        <img
+          src="images/Marasybanner_1800.jpg"
+          alt="Marasy Banner- Welcome to a community of business and living"
+          width="1800"
+          height="1000"
+        />
+      </picture>
+    </header>
+    <nav>
+      <button onclick="toggleNav()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="./">Home</a></li>
+        <li><a href="marasy.html">Marasy</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="active"><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+        <div class="attributions">
+<h3>The following sources were used to create the content of this site:</h3>
+<p>The history of Abu Dhabi: <a href="https://www.abudhabi.com/v/history/">abudhabi.com</a></p>
+<p>Information about Marasy and Al Bateen: <a href="https://www.timeoutabudhabi.com/things-to-do/things-to-do-features/451340-everything-you-need-know-about-al-bateen-in-abu-dhabi">Timeout Abu Dhabi</a>, <a href="https://www.bayut.com/area-guides/al-bateen-wharf/">Area Guides</a></p>
+</div>    
+</main>
+
+    <footer>
+      <div class="footerBox">
+        <div class="footerContact">
+          <h3>Visit Us</h3>
+          <p>
+            Marasy&nbsp;Chamber&nbsp;of&nbsp;Commerce <br />
+            W35&nbsp;Bateen&nbsp;Garden&nbsp;Towers <br />
+            Building&nbsp;C1&nbsp;Suite&nbsp;201 <br />
+          </p>
+        </div>
+        <div class="footerContact">
+          <h3>Talk to Us</h3>
+          <p>
+            Phone:&nbsp;0555551234<br />
+            Email:&nbsp;mail@marasyarea.com
+          </p>
+        </div>
+        <div class="socialMedia">
+          <h3>Follow Us</h3>
+          <img
+            src="images/facebook.png"
+            alt="facebook icon"
+            width="75"
+            height="75"
+          />
+          <img
+            src="images/insta.png"
+            alt="instagram icon"
+            width="75"
+            height="75"
+          />
+          <img
+            src="images/twitter.png"
+            alt="twitter icon"
+            width="75"
+            height="75"
+          />
+          <img
+            src="images/linkedin.png"
+            alt="linked in icon"
+            width="75"
+            height="75"
+          />
+        </div>
+      </div>
+      <p class="footerText">
+        &copy; <span id="currentyear"> </span> Marasy Chamber of Commerce | Weather Info Provided by: <a href="https://openweathermap.org" target="blank">openweathermap.org</a> | <a href="attributions.html">Attributions Page</a><br />
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>

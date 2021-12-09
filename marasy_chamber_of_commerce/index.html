@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marasy Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="A website for the Chamber of Commerce for Marasy, Abu Dhabi. It promotes businesses in the area and features weather, upcoming events, and local business information. The site also provides a place to join the chamber and experience the benefits of membership."
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/weather.js"></script>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source
+          media="(max-width: 399px)"
+          srcset="images/Marasybanner_400.jpg"
+        />
+        <source
+          media="(max-width: 799px)"
+          srcset="images/Marasybanner_800.jpg"
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="images/Marasybanner_1800.jpg"
+        />
+        <img
+          src="images/Marasybanner_1800.jpg"
+          alt="Marasy Banner- Welcome to a community of business and living"
+          width="1800"
+          height="1000"
+        />
+      </picture>
+    </header>
+    <nav>
+      <button onclick="toggleNav()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="./">Home</a></li>
+        <li><a href="marasy.html">Marasy</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="mainImage">
+        <picture>
+          <source
+            media="(max-width: 399px)"
+            srcset="images/Marasy-hero-400.jpg"
+          />
+          <source
+            media="(max-width: 799px)"
+            srcset="images/Marasy-hero-800.jpg"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="images/Marasy-hero-1200.jpg"
+          />
+          <img
+            src="images/Marasy-hero-1200.jpg"
+            alt="Marasy Banner- Welcome to a community of business and living"
+            width="1200"
+            height="654"
+          />
+        </picture>
+      </div>
+      <div class="joinBanner">
+        <p>Want to become a Member?</p>
+        <a href="join.html" class="largeButton">Join&nbsp;Now!</a>
+      </div>
+      <div class="mainContainer">
+        <section class="about">
+          <h2>About Us</h2>
+          <div class="aboutText">
+          <h3>Who We Are</h3>
+          <p>
+            The Marasy Chamber of Commerce is a non-profit organization that
+            works for you, the local business owner. Our mission is to support
+            our members and promote a community of cooperation. We advocate for
+            our business members by working with them to navigate the
+            challenging waters of owning and operating a business in Abu Dhabi.
+            We are one of the most effective Chambers in Abu Dhabi at delivering
+            benefits to our members and the community.
+          </p>
+          <h3>What We Can Do For You</h3>
+          <p>
+            Although there are many reasons to support the Marasy Chamber, a lot
+            of our members join for many networking and advertising opportunities.
+            Some join for the special discounts we offer our members of the
+            chamber. And some join for the many valuable services we offer including help with
+            licensing, relocation, and helping navigate labor issues. The benefits of membership
+            are endless.
+          </p>
+          <h3>What We Do For Marasy</h3>
+          <p>
+            In addition to what we can do for your business, the Marasy Chamber
+            of Commerce works behind the scenes to provide many of the activities that
+            bring residents and visitors to our area. We also work on economic
+            development and tourism to create a community we can all be proud
+            of.
+          </p>
+          <a href="join.html" class="joinButton">Join&nbsp;Now!</a>
+        </div>
+        </section>
+        <section class="upcomingEvents">
+          <h2>On the Horizon</h2>
+          <div class="events"><a href="https://www.motn.ae/" target="_blank"><b>Mother of the Nation Festival</b></a><br> Now-December 18 </div>
+          <div class="events"><a href="#"><b>New Years Eve on the Corniche</b></a><br> December 31 @ 10pm</div>
+          <div class="events"><a href="https://zayedfestival.ae/en/" target="_blank"><b>Sheikh Zayed Festival</b></a><br> Now-January 04, 2022 </div>
+          <div class="events"><a href="https://www.expo2020dubai.com/en" target="_blank"><b>Dubai Expo 2020</b></a><br> Now-March 31, 2022 </div>
+        </section>
+        <section class="weather">
+          <h2>Local Weather</h2>
+        </section>
+        <section class="adSpot">
+          <h2>Business Spotlight</h2>
+          <div class="advert">
+              <a href="https://www.tararosesalon.com/hair-salon-in-al-bateen/" target="_blank"><img src="images/Tara-ads-01.jpg" alt="Advertisement for Tara Rose Salon" width="400"></a>
+
+          </div>
+          <div class="advert">
+            <a href="https://captain-sams.com/" target="_blank"><img src="images/sams-ads-03.jpg" alt="Advertisement for Uncle Sam's Rentals" width="400"></a>
+
+        </div>
+        <div class="advert">
+            <a href="https://www.krushburgeruae.com/" target="_blank" rel="noopener noreferrer"><img src="images/Krush-ads-02.jpg" alt="Advertisement for Krush Burger" width="400"></a>
+
+        </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footerBox">
+        <div class="footerContact">
+          <h3>Visit Us</h3>
+          <p>
+            Marasy&nbsp;Chamber&nbsp;of&nbsp;Commerce <br />
+            W35&nbsp;Bateen&nbsp;Garden&nbsp;Towers <br />
+            Building&nbsp;C1&nbsp;Suite&nbsp;201 <br />
+          </p>
+        </div>
+        <div class="footerContact">
+          <h3>Talk to Us</h3>
+          <p>
+            Phone:&nbsp;0555551234<br />
+            Email:&nbsp;mail@marasyarea.com
+          </p>
+        </div>
+        <div class="socialMedia">
+          <h3>Follow Us</h3>
+          <img
+            src="images/facebook.png"
+            alt="facebook icon"
+            width="75"
+            height="75"
+          />
+          <img
+            src="images/insta.png"
+            alt="instagram icon"
+            width="75"
+            height="75"
+          />
+          <img
+            src="images/twitter.png"
+            alt="twitter icon"
+            width="75"
+            height="75"
+          />
+          <img
+            src="images/linkedin.png"
+            alt="linked in icon"
+            width="75"
+            height="75"
+          />
+        </div>
+      </div>
+      <p class="footerText">
+        &copy; <span id="currentyear"> </span> Marasy Chamber of Commerce |
+        Weather Data Provided by:
+        <a href="https://openweathermap.org" target="blank"
+          >openweathermap.org</a
+        > | <a href="attributions.html">Attributions Page</a>
+        <br />
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>

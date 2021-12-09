@@ -38,6 +38,7 @@ fetch(castURL)
   .then((jsfObject) => {
     const list = jsfObject["list"];
     const fiveDays = list.filter((list) => list.dt_txt.includes("18:00:00"));
+    console.log(fiveDays);
     fiveDays.forEach((fiveDays) => {
       let castInfo = document.createElement("div");
       let castDay = document.createElement("div");

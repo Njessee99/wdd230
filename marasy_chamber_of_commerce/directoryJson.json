@@ -1,0 +1,69 @@
+{
+    "businesses": [
+        {
+            "name": "%Arabica",
+            "website": "https://www.arabicacoffee.ae/",
+            "website_txt": "%Arabica Website",
+            "phone": "02 634 1333",
+            "location": "https://www.google.com/maps/search/%25arabica/@24.4530033,54.3340687,16.17z",
+            "logo": "arabica_logo.jpg"
+        },
+        {
+            "name": "Brunch and Cake",
+            "website": "https://brunchandcake.com/en/",
+            "website_txt": "Brunch and Cake Website",
+            "phone": "02 575 4880",
+            "location": "https://www.google.com/maps/place/Brunch+%26+Cake+Marsa+Al+Bateen/@24.341151,54.4750349,12.98z/data=!4m9!1m2!2m1!1sbrunch+%26+cake!3m5!1s0x3e5e6530efa9fd9b:0x202d049219473f6!8m2!3d24.4538331!4d54.3381135!15sCg1icnVuY2ggJiBjYWtlIgOIAQFaDyINYnJ1bmNoICYgY2FrZZIBCnJlc3RhdXJhbnQ",
+            "logo": "brunch_logo.jpg"
+        },
+        {
+            "name": "Captain Sam’s Jet Ski Rentals",
+            "website": "https://captain-sams.com/",
+            "website_txt": "Captain Sams Website",
+            "phone": "056 477 7970",
+            "location": "https://www.google.com/maps/place/Captain+Sam's+Jet+Ski+Tours+%26+Rentals/@24.4500946,54.3335083,15z/data=!4m5!3m4!1s0x0:0x60990fe5b2b51bbf!8m2!3d24.4500946!4d54.3335083",
+            "logo": "sams_logo.jpg"
+        },
+        {
+            "name": "Chamas",
+            "website": "https://abudhabi.intercontinental.com/chamas-churrascaria-and-bar",
+            "website_txt": "Chamas Website",
+            "phone": "02 634 1333",
+            "location": "https://www.google.com/maps/place/Chamas+Churrascaria+%26+Bar/@24.4511673,54.3263471,14.53z/data=!4m9!1m2!2m1!1schamas!3m5!1s0x3e5e65f271c01ef5:0xb51979f99c97842b!8m2!3d24.4571345!4d54.3290655!15sCgZjaGFtYXNaCCIGY2hhbWFzkgEUYnJhemlsaWFuX3Jlc3RhdXJhbnQ",
+            "logo": "chamas_logo.jpg"
+        },
+        {
+            "name": "Krush Burger",
+            "website": "https://www.krushburgeruae.com/",
+            "website_txt": "Krush Burger Website",
+            "phone": "02 448 8955",
+            "location": "https://www.google.com/maps/place/Krush+Burger/@24.4537219,54.336047,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5e65fbd3ffffff:0xedbfb8aed91d051e!8m2!3d24.4537082!4d54.3382285",
+            "logo": "krush_logo.jpg"
+        },
+        {
+            "name": "Lilac Medical Center",
+            "website": "https://lilacmc.ae/",
+            "website_txt": "Lilac Website",
+            "phone": "02 222 2469",
+            "location": "https://www.google.com/maps/place/Lilac+Medical+Centre/@24.4549148,54.3364355,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5e65f90cbd7ee5:0xe78345f3d87abb3a!8m2!3d24.4549148!4d54.3386295",
+            "logo": "lilac_logo.jpg"
+        },
+        {
+            "name": "Tara Rose Hair and Beauty Salon",
+            "website": "https://www.tararosesalon.com/",
+            "website_txt": "Tara Rose Website",
+            "phone": "02 449 5001",
+            "location": "https://www.google.com/maps/place/Tara+Rose+Hair+and+Beauty+Salon+-+Marasy/@24.4510522,54.3319496,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5e65fd2d1fbed9:0x8a78cab08895e79c!8m2!3d24.4510938!4d54.3341443",
+            "logo": "tara_logo.jpg"
+        },
+        {
+            "name": "Tashas",
+            "website": "https://www.tashascafe.com/",
+            "website_txt": "Tashas Website",
+            "phone": "02 445 0890",
+            "location": "https://www.google.com/maps/place/tashas/@24.4527136,54.3374757,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5e65f900e79c5f:0xd5fcf80e992c7923!8m2!3d24.4528209!4d54.3395901",
+            "logo": "tashas_logo.jpg"
+        }
+        
+    ]
+}
