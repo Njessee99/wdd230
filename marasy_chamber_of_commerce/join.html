@@ -59,14 +59,14 @@
       <h1>Join the Chamber</h1>
       <div class=joinInfo>
         
-        <p>By becoming a member of the Marasy Chamber of Commerse, you will be eligible for many benefits.
+        <p>By becoming a member of the Marasy Chamber of Commerse, you will be eligible for many benefits including:
           <ul>
-            <li>Networking</li>
+            <li>Networking Opportunities</li>
             <li>Marketing</li>
-            <li>Discounts</li>
-            <li>Services</li>
-            <li>Advocacy</li>
-            <li>Education</li>
+            <li>Select Discounts</li>
+            <li>Professional Services</li>
+            <li>Business Advocacy</li>
+            <li>Education and Training</li>
           </ul>
           Please view the specific benefits for each Membership Level listed below.
         </p>
@@ -140,7 +140,7 @@
                 type="text"
                 name="firstName"
                 required
-                pattern="[A-Za-z].{5,}"
+      
             /></label>
 
             <label class="top"
@@ -149,7 +149,7 @@
                 type="text"
                 name="lastName"
                 required
-                pattern="[A-Za-z].{5,}"
+          
             /></label>
             <label class="top"
               ><b>Title </b><input type="text" name="title" size="6"
@@ -192,19 +192,19 @@
           <fieldset class="label">
             <legend>Membership level</legend>
             <label class="sbs"
-              ><input type="radio" name="level" value="NP" /> Non-Profit
+              ><input type="radio" name="level" value="NP" required/> Non-Profit
               (300aed)
             </label>
             <label class="sbs"
-              ><input type="radio" name="level" value="bronze" /> Bronze
+              ><input type="radio" name="level" value="bronze" required/> Bronze
               (500aed)
             </label>
             <label class="sbs"
-              ><input type="radio" name="level" value="silver" /> Silver
+              ><input type="radio" name="level" value="silver" required/> Silver
               (1000aed)
             </label>
             <label class="sbs"
-              ><input type="radio" name="level" value="gold" /> Gold (2000aed)
+              ><input type="radio" name="level" value="gold" required/> Gold (2000aed)
             </label>
           </fieldset>
           <input type="submit" value="Join Now" class="submitBtn" />

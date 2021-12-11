@@ -76,4 +76,10 @@ fieldset.label {
 input.submitBtn {
     grid-column: 1/3;
 }
+/*-----------------Directory Page--------------------*/
+div.dirGrid {
+    
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 }

@@ -13,7 +13,7 @@ h1 {
   font-family: "Parisienne", cursive;
 }
 p {
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 h3 {
   margin-bottom: 0.3rem;
@@ -65,7 +65,7 @@ footer h3 {
 div.footerBox {
   padding: 0rem 2rem;
   border-top: 2px solid rgba(108, 165, 217, 1);
-  color: rgba(94, 143, 189, 1);
+  color: rgba(52, 80, 116, 1);
 }
 div.footerContact p {
   margin: 0rem;
@@ -74,13 +74,14 @@ div.footerContact {
   padding: 0.5rem;
 }
 p.footerText {
-  color: rgba(94, 143, 189, 1);
-  font-size: 0.9rem;
+  color: rgba(52, 80, 116, 1);
+  padding: 0.4rem;
+  margin-top: 1rem;
 }
 p.footerText a,
 p.footerText a:visited,
 div.attributions a {
-  color: rgba(251, 182, 130, 1);
+  color: rgba(150, 68, 5, 1);
 }
 
 /*---------------------Homepage------------------*/
@@ -93,7 +94,6 @@ div.joinBanner {
 div.joinBanner p {
   font-family: "Parisienne", cursive;
   display: none;
-  margin-block-start: 0;
 }
 a.largeButton {
   padding: 1rem;
@@ -112,7 +112,7 @@ div.events {
 }
 div.mainContainer {
   padding: 0.5rem;
-}   
+}
 section.about {
   padding: 1rem;
 }
@@ -131,13 +131,14 @@ div.aboutText {
 section.about a {
   text-decoration: none;
   font-family: "Parisienne", cursive;
-  color: rgba(251, 182, 130, 1);
+  color: rgba(215, 112, 34, 1);
   font-size: 2rem;
+  font-weight: 700;
   display: none;
   text-align: center;
 }
 section.about a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 div.events a {
   text-decoration: none;
@@ -175,35 +176,35 @@ div.castInfo:nth-child(3) {
 }
 div.advert {
   max-width: 400px;
-  padding: .5rem;
-  margin: .5rem auto;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
   border: 3px solid rgba(108, 165, 217, 1);
-  box-shadow: 0 0 5px black; 
+  box-shadow: 0 0 5px black;
 }
 div.advert:hover {
-    box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
 }
 /*-----------------Marasy Page--------------------*/
 div.marasyContainer {
   text-align: left;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 div.gallery figure {
   max-width: 400px;
   height: auto;
-  margin: .2rem;
+  margin: 0.2rem;
 }
 /*-----------------Join Page--------------------*/
-div.joinForm, div.joinInfo{
+div.joinForm,
+div.joinInfo {
   padding: 1rem;
   max-width: 600px;
-  margin: 0 auto; 
+  margin: 0 auto;
   text-align: left;
-  
 }
 form fieldset {
   border: 3px solid rgba(108, 165, 217, 1);
-  padding: .5rem 2%;
+  padding: 0.5rem 2%;
   margin-bottom: 2rem;
 }
 form legend {
@@ -211,10 +212,11 @@ form legend {
   font-family: "Parisienne", cursive;
   font-size: 1.5rem;
 }
-form label.top, div.label {
+form label.top,
+div.label {
   display: block;
   padding-top: 1rem;
-  font-size: .8rem
+  font-size: 0.8rem;
 }
 form label.top input,
 form label.top select,
@@ -227,7 +229,7 @@ form label.top textarea {
   color: rgba(39, 60, 86, 1);
   width: 85%;
   max-width: 20rem;
-  background-color: rgba(191, 221, 244, .5);
+  background-color: rgba(191, 221, 244, 0.5);
 }
 form label.sbs {
   display: block;
@@ -247,7 +249,8 @@ form input.submitBtn {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-form label.top input:required {
+form label.top input:required,
+form label.top textarea:required {
   border: 2px solid rgba(251, 182, 130, 1);
 }
 form label.top input:required:valid {
@@ -256,17 +259,18 @@ form label.top input:required:valid {
 div.hidden {
   display: none;
 }
+
 div.levels button {
   margin: 0.2rem 2%;
   background-color: transparent;
   border: none;
   font-size: 1.2rem;
-  color: rgba(251, 182, 130, 1);
+  color: rgba(39, 60, 86, 1);
 }
 div.levels {
-  background-color: rgba(191, 221, 244, .4);
-  padding: .5rem;
-  margin: .5rem auto;
+  background-color: rgba(191, 221, 244, 0.4);
+  padding: 0.5rem;
+  margin: 0.5rem auto;
 }
 p.highlight {
   color: rgba(251, 182, 130, 1);
@@ -274,4 +278,54 @@ p.highlight {
 }
 div.thanks {
   padding: 1rem;
+}
+/*-----------------Directory Page--------------------*/
+main.directoryMain div.list {
+  text-align: left;
+  max-width: 800px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+main.directoryMain div.list h3 {
+  background-color: rgba(243, 206, 174, 0.8);
+  padding: 0.2rem 0.5rem;
+  margin-top: 0rem;
+}
+main.directoryMain div.list p {
+  margin: 0.5rem;
+  padding-left: 1rem;
+}
+
+main.directoryMain div a {
+  color: rgba(108, 165, 217, 1);
+}
+main.directoryMain a:visited {
+  color: rgba(150, 68, 5, 1);
+}
+main.directoryMain button {
+  display: none;
+}
+main.directoryMain div.list img {
+  display: none;
+}
+/*-----------------Contact Page--------------------*/
+div.contactInfo {
+  text-align: left;
+  padding: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+div.contactInfo iframe {
+  max-width: 100%;
+  height: inherit;
+}
+div.contactInfo form fieldset {
+  border: 0px;
+}
+form input.sendBtn {
+  background-color: rgba(39, 60, 86, 1);
+  color: rgba(251, 182, 130, 1);
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
