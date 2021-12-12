@@ -15,7 +15,7 @@ h1 {
 p {
   margin-top: 0.2rem;
 }
-h3 {
+h2, h3 {
   margin-bottom: 0.3rem;
 }
 /*---------------------nav------------------*/
@@ -320,9 +320,7 @@ div.contactInfo {
   max-width: 700px;
   margin: 0 auto;
 }
-div.contactInfo h2 {
-  margin-bottom: 0.5rem;
-}
+
 div.contactInfo iframe {
   max-width: 100%;
   height: inherit;
