@@ -79,7 +79,7 @@ p.footerText {
   margin-top: 1rem;
 }
 p.footerText a {
-  color: rgba(215, 112, 34, 1);
+  color: rgba(39, 60, 86, 1);
 }
 p.footerText a:visited,
 div.attributions a {
@@ -302,7 +302,7 @@ main.directoryMain div.list p {
 }
 
 main.directoryMain div a {
-  color: rgba(215, 112, 34, 1);
+  color: rgba(52, 80, 116, 1);
 }
 main.directoryMain a:visited {
   color: rgba(150, 68, 5, 1);
