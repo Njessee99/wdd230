@@ -78,7 +78,9 @@ p.footerText {
   padding: 0.4rem;
   margin-top: 1rem;
 }
-p.footerText a,
+p.footerText a {
+  color: rgba(215, 112, 34, 1);
+}
 p.footerText a:visited,
 div.attributions a {
   color: rgba(150, 68, 5, 1);
@@ -189,6 +191,9 @@ div.marasyContainer {
   text-align: left;
   padding: 0.5rem;
 }
+div.marasyContainer h1 {
+  text-align: center;
+}
 div.gallery figure {
   max-width: 400px;
   height: auto;
@@ -297,7 +302,7 @@ main.directoryMain div.list p {
 }
 
 main.directoryMain div a {
-  color: rgba(108, 165, 217, 1);
+  color: rgba(215, 112, 34, 1);
 }
 main.directoryMain a:visited {
   color: rgba(150, 68, 5, 1);
@@ -311,9 +316,12 @@ main.directoryMain div.list img {
 /*-----------------Contact Page--------------------*/
 div.contactInfo {
   text-align: left;
-  padding: 1rem;
+  padding: 0 1rem;
   max-width: 700px;
   margin: 0 auto;
+}
+div.contactInfo h2 {
+  margin-bottom: 0.5rem;
 }
 div.contactInfo iframe {
   max-width: 100%;
@@ -328,4 +336,13 @@ form input.sendBtn {
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border: 0px;
+}
+div.board {
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid rgba(251, 182, 130, 1);
+}
+div.board h2 {
+  margin-top: 0rem;
 }

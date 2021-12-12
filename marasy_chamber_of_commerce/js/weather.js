@@ -4,7 +4,6 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     let current = document.createElement("div");
     let heading = document.createElement("h3");
     let currentIcon = document.createElement("img");
@@ -70,6 +69,8 @@ fetch(apiURL)
       document.querySelector("section.weather").appendChild(threedays);
     }
     if (jsObject.alerts) {
-        alert(`${jsObject.alerts.sender_name} says ${jsObject.alerts.description}`);
+      alert(
+        `${jsObject.alerts.sender_name} says ${jsObject.alerts.description}`
+      );
     }
   });
